@@ -1,0 +1,150 @@
+
+:root{
+    --primary-soft: hsl(180, 88%, 62%);
+    --primary-cyan: hsla(178, 100%, 50%, 0.349);
+    --blue-card: hsl(216, 50%, 16%);
+    --blue-line: hsl(215, 32%, 27%);
+    --white:hsl(0, 0%, 100%)
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: hsl(215, 86%, 9%);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    font-family: 'Outfit', sans-serif;
+}
+main{
+    background-color: var(--blue-card);
+    width: 90%;
+    max-width: 350px;  
+    min-width: 350px;
+    margin-top: 5em; 
+    border-radius: 16PX;
+}
+.card{
+    width: 85%;
+    margin: auto;
+    max-width: 350px;
+}
+picture{
+    display: flex;
+    align-items: center;
+    text-align: center;    
+    position: relative;
+    margin-top: 1em;
+    width: 100%;
+    cursor: pointer;
+}
+picture img{
+    max-height: 450px;
+    max-width: 350px;
+}
+picture,
+.img-eq,
+.card-view{
+    border-radius: 8px;
+}
+.img-eq{
+    width: 100%;
+}
+.card-view{
+    display: none;
+}
+
+img-view{
+    margin: auto;
+    
+}
+picture:hover .card-view{
+    width: 100%;
+    position: absolute;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--primary-cyan);
+}
+.card-title{
+    margin-top: 1.5em;
+}
+
+.card-title h1{
+    color: var(--white);
+    cursor: pointer;
+}
+.card-title h1:hover{
+    color: var(--primary-soft);
+}
+
+.card-creator img{
+    width: 2em;
+}
+.card-text{
+    margin-top: 1em;
+    line-height: 1.5em
+}
+
+.card-text p{
+    color: var(--primary-cyan);
+    
+}
+.card-infos{
+    margin-top: 1em;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1em;
+}
+.first-info {
+    color: var(--primary-soft);
+    display: flex;
+    font-weight: 600;
+    gap: 0.5em;
+    font-size: 1.1em;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+.second-info{
+    color: var(--primary-cyan);
+    display: flex;
+    gap: 0.5em;
+}
+.card-line{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 1em;
+}
+.line{
+    content: '';
+    border: solid var(--primary-cyan) 1px;
+    width: 100%;
+    margin: auto;
+}
+.card-creator{
+    display: flex;
+    text-align: center;
+    color: var(--white);
+    align-items: center;
+    margin: auto;
+    margin-bottom: 1.5em;
+    gap: 1em;
+
+}
+.card-creator img{
+    border: solid 1px white;
+    border-radius: 50%;
+}
+.card-creator #create{
+    color: var(--primary-cyan);
+}
+.card-creator #creator-name:hover{
+    color: var(--primary-soft);
+    cursor: pointer;
+}
